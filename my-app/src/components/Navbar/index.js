@@ -1,28 +1,37 @@
 import React from 'react';
-import {Nav, MenuLink, Up, Menu } from './StyledComponents';
+import {Nav, NavName, Up, Menu, Basket } from './StyledComponents';
 
 
 const Navbar = () => {
     return (
         <>
             <Nav>
-            
-                <Menu>
+                <NavName href='/'>HOME</NavName>
+                        <Menu>
                     
-                    <MenuLink to="/home" activeStyle>
-                         Home
-                    </MenuLink>
-                    <MenuLink to="/her" activeStyle>
-                        Her
-                    </MenuLink>
-                    <MenuLink to="/him" activeStyle>
-                        Him
-                    </MenuLink>
-                    <MenuLink to="/sale" activeStyle>
-                        Sale
-                    </MenuLink>
-                    <Up/>
-                </Menu>
+                            <li className="dropdown">
+                                <a href="/her" className="dropbtn">Her</a>
+                                <div className="dropdown-content">
+                                    <a href="/her/clothing">clothing</a>
+                                    <a href="/her/shoes">shoes</a>
+                                    <a href="her/accessoires">accessories</a>
+                                </div>
+                            </li>
+                            <li className="dropdown">
+                                <a href="/him" className="dropbtn">Him</a>
+                                 <div className="dropdown-content">
+                                    <a href="/him/clothing">clothing</a>
+                                    <a href="/him/shoes">shoes</a>
+                                    <a href="/him/accessoires">accessories</a>
+                                </div>
+                             </li>
+                            <li className="dropdown">
+                            <a href="/sale" className="dropbtn">Sale</a>
+                             </li>
+                        </Menu>
+                    <Basket href='/checkout'>
+                        <SlBasket/>
+                    </Basket>
             </Nav>
         </>
     )
