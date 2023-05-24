@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
-import { SlBasket} from "react-icons/sl"
+
+
 
 
 export const Nav = styled.nav`
@@ -26,6 +27,7 @@ export const Up = styled(FaBars)`
     position: absolute;
     cursor: pointer;
     transform: translate(-100%, 75%);
+
   }
 `;
 
@@ -38,7 +40,8 @@ export const Basket = styled.a`
     :hover{
       color: #3C6C3F;
     }
-   `
+`;
+
 export const NavName = styled.a`
   color: #FDFDDD;
   background: transparent;
@@ -55,7 +58,8 @@ export const NavName = styled.a`
     transition: 0.5s;
     padding: 3,5vh 2vw;
     }
-`
+`;
+
 export const Menu = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -68,7 +72,7 @@ export const Menu = styled.ul`
         display: inline-block;
         color:#FDFDDD;
         text-align:center;
-        padding: 2vh 5vw;
+        padding: 2vh 6vw;
         font-size: 5vh;
         text-decoration:none;
         border-radius: 5vh;

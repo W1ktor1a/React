@@ -1,5 +1,6 @@
 import React from 'react';
 import {Nav, NavName, Up, Menu, Basket } from './StyledComponents';
+import { SlBasket} from "react-icons/sl";
 
 
 const Navbar = () => {
